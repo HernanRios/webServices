@@ -16,8 +16,8 @@ public class TopicService {
 
 	public Topic createTopic(Topic inputTopic) {
 		
-		topic t = topicRepository.save(inputTopic);
-		return inputTopic;
+		Topic t = topicRepository.save(inputTopic);
+		return t;
 	}
 	
 	

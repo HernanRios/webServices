@@ -17,8 +17,8 @@ public class TopicController {
 
 	@PostMapping("/topic")
 	public Topic createTopic( @RequestBody Topic inputTopic) {
-		
-		return null;
+		Topic t = topicService.createTopic(inputTopic);
+		return t;
 	}
 
 }
